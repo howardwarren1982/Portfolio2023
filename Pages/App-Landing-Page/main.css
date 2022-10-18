@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sports-player-container {
+  max-height: 800px;
+  max-width: 540px;
+  overflow-y: scroll;
+  border: solid 1px black;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 70%;
+  margin-bottom: 50px;
+}

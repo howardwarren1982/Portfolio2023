@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
+    />
+    <link href="dist/output.css" rel="stylesheet" />
+
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <section
+      class="relative bg-[url(../resources/img/p5min.png)] md:bg-white bg-cover bg-center bg-no-repeat"
+    >
+      <nav
+        id="header"
+        class="fixed w-full z-30 top-0 bg-blue-700 bg-opacity-5"
+      >
+        <div
+          class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
+        >
+          <div class="pl-4 flex items-center">
+            <a
+              class="toggleColour text-black no-underline hover:no-underline font-bold text-xl lg:text-xl"
+              href="#"
+            >
+              HOWARD WARREN
+            </a>
+          </div>
+          <div class="block lg:hidden pr-4">
+            <button
+              id="nav-toggle"
+              class="flex items-center p-1 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+            >
+              <svg
+                class="fill-current h-6 w-6"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-blue-700 lg:bg-transparent text-black p-4 lg:p-0 z-20"
+            id="nav-content"
+          >
+            <ul class="list-reset lg:flex justify-end flex-1 items-center">
+              <li class="mr-3">
+                <a
+                  class="inline-block py-2 px-4 text-black no-underline hover:text-rose-700 text-lg lg:text-lg"
+                  href="https://www.upwork.com/freelancers/~0114ebe05e22cd411e"
+                  >Upwork</a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="inline-block text-black no-underline hover:text-rose-700 hover:text-underline py-2 px-4 text-lg lg:text-lg"
+                  href="https://www.linkedin.com/in/howard-warren-a9388885/"
+                  >Linkin</a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="inline-block text-black no-underline hover:text-rose-700 hover:text-underline py-2 px-4 text-lg lg:text-lg"
+                  href="https://github.com/howardwarren1982"
+                  >Github</a
+                >
+              </li>
+            </ul>
+            <div
+              class="mx-auto lg:mx-0 bg-white text-gray-800 rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline text-sm lg:text-lg "
+            >
+              HOWARDWARREN89@GMAIL.COM
+          </div>
+          </div>
+        </div>
+        <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+      </nav>
+
+      <div
+        class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
+      >
+        <div class="max-w-xl text-center sm:text-left">
+          <h1 class="text-3xl font-extrabold sm:text-5xl mb-5">
+            I build
+            <strong class="font-extrabold text-blue-700"> Websites </strong>
+            and Web
+            <strong class="font-extrabold text-blue-700">
+              Applications.
+            </strong>
+          </h1>
+          <h2 class="text-2xl mb-5 text-center underline pt-3">About Me</h2>
+          <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed md:backdrop-blur-sm backdrop-brightness-50 md:backdrop-brightness-100 md:text-black pr-1  text-white pl-5 rounded-2xl">
+            A hobby coder for over 10 years. Some of the
+            programing languages that I have used are Java, c++, Python
+            and JavaScript </br>Now I do freelance frontend development work. 
+            Whether you need pixel-perfect HTML and CSS or a React Js application; 
+            I can build it for you. 
+          </p>
+
+          <div class="mt-11 flex flex-wrap gap-4 text-center">
+            <a
+              href="#skills"
+              class="block w-full rounded bg-blue-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+            >
+              See Projects
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills banner -->
+    <div class="bg-gray-50 dark:bg-gray-800">
+      <h2 class="text-3xl font-bold mt-1 text-center pt-3 underline" id="skills">Skills</h2>
+      <div
+        class="bg-gray-50 dark:bg-gray-800 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-8 md:gap-12 gap-14 lg:px-20 lg:py-12 py-10 md:px-12 px-4"
+      >
+        <!-- Just Being A Good Person -->
+        <div class="">
+          <img
+            class="dark:hidden w-8 "
+            src="./resources/img/goodPerson.svg"
+            alt="person"
+          />
+          <img
+            class="dark:block hidden w-8"
+            src="./resources/img/goodPerson.svg"
+            alt="person"
+          />
+          <h3
+            class="text-xl leading-5 dark:text-white font-semibold text-gray-800 lg:mt-10 mt-8"
+          >
+            Just Being A Good Person
+          </h3>
+          <p
+            class="text-base leading-6 font-normal dark:text-gray-300 text-gray-600 mt-4 lg:w-full md:w-9/12 w-full"
+          >
+          I always try to treat people with the same respect that I would want. 
+          Conduct myself with honesty and integrity in everything that I do.
+          </p>
+        </div>
+
+        <!-- Pixel-Perfect HTML & CSS -->
+
+        <div class="">
+          <img
+            class="dark:hidden w-8"
+            src="./resources/img/htmlCss.png"
+            alt="html and css"
+          />
+          <img
+            class="dark:block hidden w-8"
+            src="./resources/img/htmlCss.png"
+            alt="html and css"
+          />
+          <h3
+            class="text-xl leading-5 dark:text-white font-semibold text-gray-800 lg:mt-10 mt-8"
+          >
+            Pixel-Perfect HTML & CSS
+          </h3>
+          <p
+            class="text-base leading-6 font-normal dark:text-gray-300 text-gray-600 mt-4 lg:w-full md:w-9/12 w-full"
+          >
+          Can transform your ideas present in PSD/Figma formats into responsive websites.
+            
+          </p>
+        </div>
+
+        <!--  React Js -->
+
+        <div class="">
+          <img
+            class="dark:hidden w-8"
+            src="./resources/img/reactlogo.svg"
+            alt="React.js"
+          />
+          <img
+            class="dark:block hidden w-8"
+            src="./resources/img/reactlogo.svg"
+            alt="React.js"
+          />
+          <h3
+            class="text-xl leading-5 dark:text-white font-semibold text-gray-800 lg:mt-10 mt-8"
+          >
+            React Js
+          </h3>
+          <p
+            class="text-base leading-6 font-normal dark:text-gray-300 text-gray-600 mt-4 lg:w-full md:w-9/12 w-full"
+          >
+          Design and implement user interface components for JavaScript-based web applications using the React open-source library ecosystem.
+          </p>
+        </div>
+
+        <!-- Advanced JavaScript -->
+
+        <div class="">
+          <img
+            class="dark:hidden"
+            src="./resources/img/Javascript.png"
+            alt="JavaScript"
+          />
+          <img
+            class="dark:block hidden"
+            src="./resources/img/Javascript.png"
+            alt="JavaScript"
+          />
+          <h3
+            class="text-xl leading-5 dark:text-white font-semibold text-gray-800 lg:mt-10 mt-8"
+          >
+            Advanced JavaScript
+          </h3>
+          <p
+            class="text-base leading-6 font-normal dark:text-gray-300 text-gray-600 mt-4 lg:w-full md:w-9/12 w-full"
+          >
+            Classes, Web Components, Asynchronous JavaScript, DOM Manipulation, Firebase, MongoDB... 
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container my-24 px-6 mx-auto">
+      <!-- Section: Design Block -->
+      <section
+        class="mb-32 text-gray-800 text-center md:text-left"
+        id="projectSection"
+      >
+        <h2 class="text-3xl font-bold mb-12 text-center underline">Projects</h2>
+
+        <div class="grid md:grid-cols-2 gap-x-6 xl:gap-x-12 items-center mb-24">
+          <div class="mb-6 md:mb-0">
+            <div
+              class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple rounded-lg"
+              data-mdb-ripple="true"
+              data-mdb-ripple-color="light"
+            >
+              <img
+                src="./resources/img/NationalityAppPic.png"
+                class="w-full"
+                alt="Nationality app picture"
+              />
+              <a href="https://remnote.com/plugins/nationality_predictor">
+                <div
+                  class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                  style="background-color: rgba(251, 251, 251, 0.2)"
+                ></div>
+              </a>
+            </div>
+          </div>
+          <div class="mb-6 md:mb-0">
+            <h3 class="text-2xl font-bold mb-3">RemNote Nationality Predictor Plugin</h3>
+           
+            <div class="px-6 pt-4 pb-2">
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">React</span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">HTML & CSS </span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Tailwind CSS </span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> API</span>
+            </div>
+            <p class="text-gray-500">
+              RemNote is a note taking and learning web application.
+               I built a plug-in for it that allows you to look up a name, 
+               and to predict the nationality of the individual with that name. 
+            </p>
+            <a href="https://github.com/howardwarren1982/nationality_predictor" class="underline text-blue-600">See Code</a>
+            <a href="https://remnote.com/plugins/nationality_predictor" class="underline text-yellow-500 ml-9">See Project</a>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-x-6 xl:gap-x-12 items-center mb-24">
+          <div class="mb-6 md:mb-0 md:order-2">
+            <div
+              class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg"
+              data-mdb-ripple="true"
+              data-mdb-ripple-color="light"
+            >
+              <img
+              
+                src="./resources/img/sportsAppPic.png"
+                class="w-full"
+                alt="Louvre"
+              />
+              <a href="./Pages/App-Landing-Page/index.html">
+                <div
+                  class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                  style="background-color: rgba(251, 251, 251, 0.2)"
+                ></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="mb-6 md:mb-0 md:order-1">
+            <h3 class="text-2xl font-bold mb-3">Sports App</h3>
+            
+            <div class="px-6 pt-4 pb-2">
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Vanilla JavaScript App</span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">HTML & CSS </span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Tailwind CSS </span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> API</span>
+            </div>
+            <p class="text-gray-500">
+              This app allows you to look up athletes. It was built without using any framworks. The API is found at www.thesportsdb.com.
+            </p>
+            <a href="#!" class="underline text-blue-600">See Code</a>
+            <a href="./Pages/App-Landing-Page/index.html" class="underline text-yellow-500 ml-9">See Project</a>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-x-6 xl:gap-x-12 items-center mb-12">
+          <div class="mb-6 md:mb-0">
+            <div
+              class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg"
+              data-mdb-ripple="true"
+              data-mdb-ripple-color="light"
+            >
+              <img
+                src="./resources/img/dashProjPic.png"
+                class="w-full"
+                alt="Dashboard App"
+              />
+              <a href="https://howardcryptodash.com/">
+                <div
+                  class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                  style="background-color: rgba(251, 251, 251, 0.2)"
+                ></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="mb-6 md:mb-0">
+            <h3 class="text-2xl font-bold mb-3">CRUD React Js Dashboard App</h3>
+           
+            <div class="px-6 pt-4 pb-2">
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">React</span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">HTML & CSS </span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> API</span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> User Authentication</span>
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> Firebase Database</span>
+            </div>
+            <p class="text-gray-500">
+              Cryptocurrency exchange dashboard. Fetching data from www.coingecko.com.
+              Use Firebase for the database and user authentication. React Context is used manage state globally.
+              (to test app, user is test@test.com, Password is test123)
+            </p>
+            <a href="https://github.com/howardwarren1982/CryptoDash" class="underline text-blue-600">See Code</a>
+            <a href="https://howardcryptodash.com/" class="underline text-yellow-500 ml-9">See Project</a>
+          </div>
+        </div>
+       
+      </section>
+      <!-- Section: Design Block -->
+    </div>
+    <footer class="bg-gray-200 text-center lg:text-left">
+      <div
+        class="text-gray-700 text-center text-base p-4"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        
+          HOWARDWARREN89@GMAIL.COM
+      </div>
+    </footer>
+
+    <script src="resources/js/script.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script>
+     
+
+      var navMenuDiv = document.getElementById("nav-content");
+      var navMenu = document.getElementById("nav-toggle");
+
+      document.onclick = check;
+      function check(e) {
+        var target = (e && e.target) || (event && event.srcElement);
+
+        //Nav Menu
+        if (!checkParent(target, navMenuDiv)) {
+          // click NOT on the menu
+          if (checkParent(target, navMenu)) {
+            // click on the link
+            if (navMenuDiv.classList.contains("hidden")) {
+              navMenuDiv.classList.remove("hidden");
+            } else {
+              navMenuDiv.classList.add("hidden");
+            }
+          } else {
+            // click both outside link and outside menu, hide menu
+            navMenuDiv.classList.add("hidden");
+          }
+        }
+      }
+      function checkParent(t, elm) {
+        while (t.parentNode) {
+          if (t == elm) {
+            return true;
+          }
+          t = t.parentNode;
+        }
+        return false;
+      }
+    </script>
+  </body>
+</html>
+
+
